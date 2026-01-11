@@ -2,233 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Aiman Max | Official</title>
+  <title>Aiman Max — Official Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Awesome untuk icon sosial -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      scroll-behavior: smooth;
-      background: #111;
-      color: #fff;
-    }
-
-    /* Navbar */
-    nav {
-      display: flex;
-      justify-content: center;
-      background: rgba(0,0,0,0.7);
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #f39c12;
-    }
-
-    /* Hero Section */
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-image: url('https://i.scdn.co/image/ab67616100005174542b03d2540e068e49a80356');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::after {
-      content: '';
-      position: absolute;
-      top:0; left:0;
-      width:100%; height:100%;
-      background: rgba(0,0,0,0.4);
-      z-index:1;
-    }
-
-    .hero > * {
-      position: relative;
-      z-index:2;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
-    }
-
-    .hero h1 {
-      font-size: 60px;
-      letter-spacing: 4px;
-      margin-bottom: 10px;
-      animation-delay: 0.3s;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-      color: #ddd;
-      animation-delay: 0.5s;
-    }
-
-    .hero .social-buttons a {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 20px;
-      border: 1px solid #fff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-      font-size: 16px;
-      animation-delay: 0.7s;
-    }
-
-    .hero .social-buttons a:hover {
-      background: #fff;
-      color: #000;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Sections */
-    section {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    section h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    section p {
-      color: #aaa;
-      max-width: 600px;
-      margin: 0 auto 20px auto;
-    }
-
-    /* Video embed */
-    .video-container {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto 40px auto;
-      padding-bottom: 56.25%;
-      height: 0;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      border: none;
-    }
-
-    /* Social icons inside section */
-    .social-icons a {
-      color: #fff;
-      margin: 0 10px;
-      font-size: 28px;
-      transition: 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #f39c12;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="brand">AIMAN MAX</div>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#videos">Videos</a>
-    <a href="#tour">Tour</a>
-    <a href="#about">About</a>
-    <a href="#shop">Shop</a>
+    <a href="about.html">About</a>
+    <a href="shop.html">Shop</a>
+    <a href="news.html">News</a>
+    <a href="collab.html">Collab</a>
+    <a href="platform.html">Platform & Links</a>
   </nav>
+</header>
 
-  <!-- Hero Section -->
-  <div class="hero" id="home">
-    <h1>AIMAN MAX</h1>
-    <p>Singer • Songwriter • Malaysia</p>
-    <div class="social-buttons">
-      <a href="https://www.tiktok.com/@aiman_max" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
-      <a href="https://www.instagram.com/aimanmaxofficial/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://www.youtube.com/@Aiman_Max" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-      <a href="https://www.youtube.com/@aimanmaxVEVO" target="_blank"><i class="fab fa-youtube"></i> VEVO</a>
-    </div>
+<!-- HERO -->
+<section class="hero">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd0QeB--clWGykoJwmSVgRh-CZEC8uZXf7CoQJcC5MCQ&s=10">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>THE OTHER SIDE OF PAIN</h1>
+    <p>New Album by Aiman Max — Out Now</p>
+    <a href="#album" class="btn">Listen Now</a>
   </div>
+</section>
 
-  <!-- Videos Section -->
-  <section id="videos">
-    <h2>Videos</h2>
-    <!-- Dua video utama -->
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/GhSsl33c9g0" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/UEC7y4OUBfE" allowfullscreen></iframe>
-    </div>
+<!-- ALBUM SECTION -->
+<section class="album" id="album">
+  <h2>New Album Release</h2>
+  <h3>The Other Side of Pain</h3>
 
-    <!-- Live YouTube Channels -->
-    <h3>Latest from YouTube Channels</h3>
+  <div class="player">
+    <iframe 
+      src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nlvcgzqq7egKHYUh2U2_69vuagp1LufCI" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
 
-    <!-- Channel 1 -->
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=UC76TuXZ66AXRKpBFBNo4Vyg" allowfullscreen></iframe>
-    </div>
-
-    <!-- Channel 2 -->
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=UCm8R-htz9iLYcUAg1j9sKaw" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <!-- Tour Section -->
-  <section id="tour">
-    <h2>Tour</h2>
-    <p>Belum membuat sebarang konsert.</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About</h2>
-    <p><strong>Nama Penuh:</strong> Wan Aiman bin Wan Aaqashah</p>
-    <p><strong>Tarikh Lahir:</strong> 5 Oktober 2010 (umur 15 tahun)</p>
-    <p><strong>Asal:</strong> Segamat, Johor, Malaysia</p>
-    <p><strong>Kerjaya:</strong> Penyanyi, penulis lagu, penerbit muzik, dan penari</p>
-    <p><strong>Genre Muzik:</strong> Lo-fi, Pop Alternatif, Hip-hop, Electropop</p>
-  </section>
-
-  <!-- Shop Section -->
-  <section id="shop">
-    <h2>Shop</h2>
-    <p>Belum mengeluarkan apa-apa barang lagi.</p>
-  </section>
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Aiman Max — Official Website</p>
+</footer>
 
 </body>
-  </html>
+</html>
