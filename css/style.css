@@ -131,3 +131,15 @@ footer {
   margin-bottom: 25px;
   color: #ddd;
 }
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.menu a:hover {
+  color: #00bfff;
+}
