@@ -257,3 +257,53 @@ footer {
   height: 45px;       /* tinggi logo, boleh adjust ikut saiz sebenar */
   width: auto;
   }
+
+/* SHOP PAGE */
+.shop-content {
+  padding: 60px 30px;
+  background: #000;
+}
+
+.shop-content .container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.shop-item {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  text-align: center;
+}
+
+.shop-item img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.shop-item h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.shop-item p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.shop-item a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.shop-item a:hover {
+  color: #fff;
+}
