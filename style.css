@@ -1,0 +1,160 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+.navbar .logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.navbar .menu a:hover {
+  color: #00bfff;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(45%);
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 120px;
+  left: 60px;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+/* ALBUM SECTION */
+.album {
+  padding: 100px 30px;
+  text-align: center;
+  background: #000;
+}
+
+.album h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #00bfff;
+  letter-spacing: 3px;
+}
+
+.album h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.player {
+  max-width: 900px;
+  margin: auto;
+}
+
+.player iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px 0;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 42px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .navbar {
+    padding: 15px 30px;
+  }
+  .navbar .menu a {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+  .player iframe {
+    height: 300px;
+  }
+}
