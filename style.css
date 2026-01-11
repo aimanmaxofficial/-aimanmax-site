@@ -202,3 +202,43 @@ footer {
   margin-bottom: 25px;
   color: #ddd;
 }
+
+/* NEWS PAGE */
+.news-content {
+  padding: 60px 30px;
+  background: #000;
+}
+
+.news-content .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.news-card {
+  background: #111;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #222;
+}
+
+.news-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.news-card a {
+  text-decoration: none;
+  color: #00bfff;
+  transition: 0.3s;
+}
+
+.news-card a:hover {
+  color: #fff;
+}
+
+.news-card p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+  }
