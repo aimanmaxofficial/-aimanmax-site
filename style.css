@@ -242,3 +242,18 @@ footer {
   color: #ccc;
   line-height: 1.6;
   }
+
+/* Navbar Logo */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;          /* jarak antara logo & text */
+  font-size: 24px;     /* saiz text “AIMAN MAX” */
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar .logo .logo-img {
+  height: 45px;       /* tinggi logo, boleh adjust ikut saiz sebenar */
+  width: auto;
+  }
